@@ -11,7 +11,7 @@ def sieve(n: int) -> list[int]:
     [2, 3, 5, 7, 11, 13]
 
     """
-    assert n > 2
+    assert n > 0
     candidates = list(range(2, n + 1))
     primes = []
 
