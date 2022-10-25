@@ -15,6 +15,13 @@ def sieve(n: int) -> list[int]:
     candidates = list(range(2, n + 1))
     primes = []
 
-    # FIXME: fill out this bit
+    if len(candidates) == 0:
+        return primes
+    else:
+        if len(primes) == 0:
+            primes.append(candidates[0])
+        for c in candidates:
+            if all([c % p for p in primes]): # help from husband
+                primes.append(c)
 
     return primes
