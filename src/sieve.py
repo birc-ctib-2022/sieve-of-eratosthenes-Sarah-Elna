@@ -22,7 +22,7 @@ def sieve(n: int) -> list[int]:
             primers.append(candidates[0])
         for c in candidates:
             for p in primes:
-                if c // != 0:
+                if (c // p) != 0:
                     primes.append(c)
 
     return primes
